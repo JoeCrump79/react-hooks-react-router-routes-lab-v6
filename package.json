@@ -30,6 +30,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "server": "json-server --watch db.json --port 4000",
     "lint": "eslint .",

@@ -2,6 +2,8 @@ import "@testing-library/jest-dom";
 import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
+import routes from "../routes"; 
+
 import NavBar from "../components/NavBar";
 
 let container;
@@ -13,6 +15,7 @@ beforeEach(() => {
     </BrowserRouter>
   ).container;
 });
+
 
 test('wraps content in a div with "navbar" class', () => {
   expect(container.querySelector(".navbar")).toBeInTheDocument();
